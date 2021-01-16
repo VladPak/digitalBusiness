@@ -1,0 +1,44 @@
+//Colors
+$mainBlue: ##0067f4
+$mainWhite: #ffffff
+$mainWhite2: #f4f6f7
+$mainBlack: #000000
+
+//Fonts: Google Font: Poppins
+$mainFont: 'Poppins', sans-serif
+
+//Font sizes
+
+
+//Mixin: iconSizes
+=iconSize($sizeW, $sizeH){
+  width: $sizeW
+  height: $sizeH
+}
+
+//Mixin Flex
+=flexConfig($flexDisplay, $flexDirection, $justContent, $flexAlign){
+  display: $flexDisplay
+  flex-direction: $flexDirection
+  justify-content: $justContent
+  align-items: $flexAlign
+}
+
+//Mixin Grid Template
+=gridTemplateConfig($gridDisplay, $gridTemplateRows, $gridTemplateColumns, $gridGap){
+  display: $gridDisplay
+  grid-template: $gridTemplateRows / $gridTemplateColumns
+  gap: $gridGap
+}
+
+//Mixin Grid Item
+=gridItemConfig($gridRowStart, $gridRowEnd, $gridColStart, $gridColEnd, $itemOrder){
+  grid-row: $gridRowStart / $gridRowEnd
+  grid-column: $gridColStart / $gridColEnd
+}
+
+//Mixin Grid Item Placement
+=gridItemPlacementConfig($gridJustify, $gridAlign{
+  justify-items: $gridJustify
+  align-items: $gridAlign
+}
