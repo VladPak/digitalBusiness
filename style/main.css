@@ -4,4 +4,69 @@
   box-sizing: border-box;
 }
 
+.nav-menu {
+  background: #0067f4;
+}
+
+.nav-logo img {
+  width: 70px;
+  height: 50px;
+}
+
+.nav-list {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list li {
+  list-style-type: none;
+}
+
+.nav-list li a {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+.nav-list button {
+  color: #0067f4;
+  background: #ffffff;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  border: 1px solid #ffffff;
+}
+
+.nav-list button:hover {
+  font-size: 18px;
+  color: #ffffff;
+  background: #0067f4;
+  border: 1px solid #ffffff;
+  -webkit-transition: 0.5s ease-in-out;
+}
+
+.sticky .nav-menu {
+  background: #ffffff;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .body-main {
+  padding-top: 100px;
+}
+
 /*# sourceMappingURL=main.css.map */

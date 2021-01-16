@@ -1,4 +1,71 @@
+@import "varsForDesign"
+
 *
   margin: 0
   padding: 0
   box-sizing: border-box
+
+%container
+  width: 940px * 100% / 1200px
+  margin: 0 auto
+
+.nav-menu
+  background: $mainBlue
+
+.nav-logo
+  img
+    +iconSize(70px, 50px)
+
+.nav-list
+  height: 100px
+  +flexConfig(flex, row, space-between, center)
+
+.nav-list
+  li
+    list-style-type: none
+
+.nav-list
+  li
+    a
+      font-size: 16px
+      font-weight: bold
+      text-transform: uppercase
+      color: $mainWhite
+      font-family: $mainFont
+      text-decoration: none
+
+.nav-list
+  button
+    color: $mainBlue
+    background: $mainWhite
+    text-transform: uppercase
+    padding: 15px 30px
+    border: none
+    border-radius: 5px
+    font-weight: bold
+    border: 1px solid $mainWhite
+
+.nav-list
+  button:hover
+    font-size: 18px
+    color: $mainWhite
+    background: $mainBlue
+    border: 1px solid $mainWhite
+    -webkit-transition: 0.5s ease-in-out
+
+%changeStyleNav
+  .nav-menu
+    background: $mainWhite
+
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky
+  position: fixed
+  top: 0
+  width: 100%
+  @extend %changeStyleNav
+
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .body-main
+  padding-top: 100px
