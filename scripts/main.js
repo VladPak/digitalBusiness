@@ -24,6 +24,9 @@ function myFunction() {
       allAnchorNav[i].style.color = "#5a5a5a";
     }
     btnNav.style.border = "2px solid #0067f4";
+    btnNav.style.background = "#0067f4";
+    btnNav.style.color = "#ffffff";
+
 
   } else {
     header.classList.remove("sticky");
@@ -33,6 +36,10 @@ function myFunction() {
     for(var j=0; j < allAnchorNav.length; j++){
       allAnchorNav[j].style.color = "#ffffff";
     }
+
+    btnNav.style.background = "#ffffff";
+    btnNav.style.color = "#0067f4";
+    btnNav.style.border = "1px solid #ffffff";
 
   }
 }
