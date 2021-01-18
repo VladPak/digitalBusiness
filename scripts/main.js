@@ -6,7 +6,7 @@ var header = document.getElementById("navigation");
 var logoImg = document.getElementById("logoImg");
 
 var anchorParent = document.querySelector("#navMenu");
-var allAnchorNav = document.querySelectorAll(".nav-list > li > a");
+var allAnchorNav = document.querySelectorAll(".nav-list > ul > li > a");
 
 
 var btnNav = document.getElementById("navigationBtn");
@@ -17,7 +17,7 @@ var sticky = header.offsetTop;
 function myFunction() {
   if (window.pageYOffset > sticky) {
     header.classList.add("sticky");
-    header.style.background = "#ffffff";
+    header.style.background = "#edeff0";
     logoImg.src = "images/logoBlue.svg"
 
     for(var i=0; i < allAnchorNav.length; i++){

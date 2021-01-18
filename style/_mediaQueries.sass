@@ -1,28 +1,40 @@
 @media screen and (max-width: 766px)
-  .nav-list
-    height: auto
-    +flexConfig(flex, column, space-between, center)
+  .navigationBar
+    height: 80px
 
   .nav-list
-    li
-      padding: 10px 0
-      display: none
+    ul
+      li
+        padding: 13px
 
+  .nav-list
+    ul
+      top: 80px
+      left: -100%
+      +flexConfig(flex, column, space-between, center)
+      width: 100%
+      height: auto
+      overflow: auto
+      position: absolute
+      background: $mainBlue
+      transition: all 0.4s ease
 
   #logoImg
     align-self: flex-start
 
   #navigationBtn
     display: none
-    visibility: hidden
+    visibility: none
+
+  .responsiveBtns
+    display: flex
+    justify-content: center
+    align-items: center
 
   #navBtnDowload
+    margin-right: 25px
     visibility: visible
-    display: flex
-    align-self: flex-end
-    position: absolute
-    top: 1.7%
-    right: 14%
+    display: inline-block
     padding: 10px 20px
     color: $mainBlue
     background: $mainWhite
@@ -31,27 +43,25 @@
     border-radius: 5px
     font-weight: bold
     border: 1px solid $mainWhite
-
 
   #navBtnBurger
     visibility: visible
-    display: flex
-    align-self: flex-end
-    position: absolute
-    top: 1.7%
-    right: 2%
+    display: inline-block
     padding: 10px 20px
     color: $mainBlue
     background: $mainWhite
-    text-transform: uppercase
-    border: none
     border-radius: 5px
     font-weight: bold
     border: 1px solid $mainWhite
 
+  #navBtnBurger:focus
+    outline: none
 
-  .menu-list
-    display: none
+  #navBtnDowload:focus
+    outline: none
 
+  .open-menu-list
+        left: 0 !important
 
-    
+  .block-scrolling
+    overflow: hidden

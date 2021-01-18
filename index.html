@@ -8,27 +8,22 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style/main.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-
 
   <title>Digital Business (Porfolio Project)</title>
 </head>
 <body>
   <a id="btnUp"></a>
-
-
   <div class="blockNavigation">
     <div class="nav-menu" id="navigation">
       <div class="container">
-        <button id="navBtnDowload" type="button" name="button">Download</button>
-        <button id="navBtnBurger" type="button" name="button">X</button>
+        <div class="navigationBar">
 
-          <div id="navMenu" class="nav-list">
+          <div class="companyLogo">
             <img id="logoImg" src="images/logo.svg" alt="Company Logo">
-
-            <ul>
+          </div>
+          <div id="navMenu" class="nav-list">
+            <ul class="menu">
               <li><a href="#">Home</a></li>
               <li><a href="#">Services</a></li>
               <li><a href="#">Portfolio</a></li>
@@ -37,12 +32,18 @@
               <li><a href="#">Team</a></li>
               <li><a href="#">Contact</a></li>
             </ul>
-
+          </div>
+          <div class="navigationBtnDwn">
             <button id="navigationBtn" type="button" name="button">Download</button>
           </div>
+          <div class="responsiveBtns">
+            <button id="navBtnDowload" type="button" name="button">Get contact</button>
+            <button id="navBtnBurger" type="button" name="button">☰</button>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
+    </div>
 
 
 
@@ -54,7 +55,7 @@
     </div>
 
   </div>
-<script nomodule type="text/javascript" src="scripts/hideShow.js"></script>
+<script type="text/javascript" src="scripts/hideShow.js"></script>
 <script type="text/javascript" src="scripts/main.js"></script>
 <script type="text/javascript" src="scripts/scrollToTop.js">
 </script>
