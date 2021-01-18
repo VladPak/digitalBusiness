@@ -1,7 +1,53 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+#navBtnDowload {
+  visibility: hidden;
+  display: none;
+}
+
+#navBtnBurger {
+  visibility: hidden;
+  display: none;
+}
+
+#btnUp {
+  display: inline-block;
+  background-color: #0067f4;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  margin: 30px;
+  position: fixed;
+  bottom: 1%;
+  right: 1%;
+  transition: background-color 0.3s;
+  z-index: 1000;
+  display: none;
+}
+
+.show {
+  display: inline-block;
+}
+
+#btnUp:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#btnUp::after {
+  content: "";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
 }
 
 .nav-menu {
@@ -21,11 +67,7 @@
   align-items: center;
 }
 
-.nav-list li {
-  list-style-type: none;
-}
-
-.nav-list li a {
+.nav-list ul li a {
   font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
@@ -34,7 +76,22 @@
   text-decoration: none;
 }
 
-.nav-list button {
+.nav-list ul {
+  list-style-type: none;
+}
+
+.nav-list ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-list ul li {
+  padding: 10px 15px 0 15px;
+}
+
+#navigationBtn {
   color: #0067f4;
   background: #ffffff;
   text-transform: uppercase;
@@ -45,7 +102,7 @@
   border: 1px solid #ffffff;
 }
 
-.nav-list button:hover {
+.nav-list #navigationBtn:hover {
   font-size: 18px;
   -webkit-transition: 0.5s ease-in-out;
 }
@@ -64,6 +121,68 @@
 /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .body-main {
   padding-top: 150px;
+}
+
+@media screen and (max-width: 766px) {
+  .nav-list {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-list li {
+    padding: 10px 0;
+    display: none;
+  }
+
+  #logoImg {
+    align-self: flex-start;
+  }
+
+  #navigationBtn {
+    display: none;
+    visibility: hidden;
+  }
+
+  #navBtnDowload {
+    visibility: visible;
+    display: flex;
+    align-self: flex-end;
+    position: absolute;
+    top: 1.7%;
+    right: 14%;
+    padding: 10px 20px;
+    color: #0067f4;
+    background: #ffffff;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 1px solid #ffffff;
+  }
+
+  #navBtnBurger {
+    visibility: visible;
+    display: flex;
+    align-self: flex-end;
+    position: absolute;
+    top: 1.7%;
+    right: 2%;
+    padding: 10px 20px;
+    color: #0067f4;
+    background: #ffffff;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 1px solid #ffffff;
+  }
+
+  .menu-list {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
