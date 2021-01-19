@@ -9,7 +9,7 @@ $('#navBtnBurger').click(function (e){
   if($("#navBtnBurger").text() == "☰"){
     $("#navBtnBurger").text("X");
   }
-  else{
+  else if($("#navBtnBurger").text() == "X"){
     $("#navBtnBurger").text("☰");
   }
 });
@@ -17,5 +17,8 @@ $('#navBtnBurger').click(function (e){
 //Get the action: -> click on anchors (navigation link) -> close the menu
 $('ul.menu li a').click(function (e){
   e.preventDefault();
+  $("#navBtnBurger").text("☰");
   $('ul.menu').toggleClass('open-menu-list');
+  $('body').removeClass('block-scrolling');
+
 });
