@@ -5,6 +5,11 @@
   padding: 0
   box-sizing: border-box
 
+.wrapper
+  display: flex
+  flex-direction: column
+
+
 #navBtnDowload
   visibility: hidden
   display: none
@@ -24,7 +29,7 @@
   width: 50px
   height: 50px
   text-align: center
-  border-radius: 4px
+  border-radius: 20%
   margin: 30px
   position: fixed
   bottom: 1%
@@ -44,7 +49,8 @@
   font-style: normal
   font-size: 2em
   line-height: 50px
-  color: #fff
+  color: #ffffff
+
 
 .navigationBar
   +flexConfig(flex, row, space-between, center)
@@ -77,6 +83,34 @@
        color: $mainWhite
        font-family: $mainFont
        text-decoration: none
+       display: block
+
+.nav-list
+  ul
+    li
+      a::after
+        content: ""
+        display: block
+        width: 0
+        height: 5px
+        background: linear-gradient(to right, #ffffff 0%, #00a4ff 100%)
+        transition: width 0.3s
+
+.nav-list
+  ul
+    li
+      a:hover::after
+        width: 100%
+        transition: width 0.3s
+
+.activeLink::after
+  content: "" !important
+  display: block !important
+  width: 100% !important
+  height: 5px !important
+  background: linear-gradient(to right, #ffffff 0%, #00a4ff 100%) !important
+  transition: width 0.3s !important
+
 
 
 #navigationBtn
@@ -106,6 +140,16 @@
   width: 100%
   @extend %changeStyleNav
 
+.body-main
+  flex: 1 1 auto
+
+.footer-content
+  height: 300px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  background: #000000
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
 // .sticky + .body-main
