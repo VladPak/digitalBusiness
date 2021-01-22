@@ -166,7 +166,7 @@
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
 .slider-body {
-  padding: 40px 0 10px 0;
+  padding: 40px 0 20px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -318,6 +318,134 @@
 .dot-active {
   background-color: #828282 !important;
   border: 2px solid #fff;
+}
+
+.servicesSection {
+  background: #f4f6f7;
+}
+
+.pricingContent, .portfolioContent, .servicesContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px 0 150px 0;
+}
+
+.pricingTitles, .portfolioTitles, .servicesTitles {
+  text-align: center;
+}
+
+.pricingTitles h3, .portfolioTitles h3, .servicesTitles h3 {
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  color: #000000;
+  letter-spacing: 2px;
+}
+
+.pricingTitles p, .portfolioTitles p, .servicesTitles p {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  font-size: 18px;
+  width: 50%;
+  margin: 0 auto;
+  color: #828282;
+}
+
+.servicesDepartments {
+  padding-top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.servicesDepartmentItem:last-child {
+  margin-right: 0;
+}
+
+.servicesDepartmentItem:first-child {
+  margin-left: 0;
+}
+
+.servicesDepartmentItem {
+  border: 1px solid #0067f4;
+  border-radius: 5px;
+  background: #ffffff;
+  height: auto;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 18px;
+  overflow: hidden;
+  margin: 0 20px;
+}
+
+.itemInnerP1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.itemInnerP1 img {
+  width: 85px;
+  height: 85px;
+}
+
+.itemInnerP2 {
+  padding-top: 25px;
+  flex: 1 1 auto;
+}
+
+.itemInnerP2 p {
+  padding: 15px 0;
+  color: #000000;
+  font-size: 15px;
+}
+
+.itemInnerP3 a {
+  font-size: 16px;
+  color: #0067f4;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.itemInnerP3 a:hover {
+  color: pink;
+  text-decoration: none;
+}
+
+.portfolioSection {
+  background: #ffffff;
+}
+
+.portfolioGrids {
+  display: grid;
+  grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+  grid-auto-flow: row;
+  grid-gap: 40px;
+}
+
+.pricingSection {
+  background: #f4f6f7;
+}
+
+.pricingPlans {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pricingPlanItem {
+  width: 270px;
+  height: 470px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(180deg, #14f8fb 0%, #2da2fd 35%, #116eff 80%);
 }
 
 @media screen and (max-width: 766px) {
