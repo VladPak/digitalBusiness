@@ -25,6 +25,11 @@
   margin: 0 auto;
 }
 
+.blockNavigation {
+  z-index: 100000;
+  position: relative;
+}
+
 #btnUp {
   display: inline-block;
   background-color: #0067f4;
@@ -47,12 +52,12 @@
 }
 
 #btnUp::after {
-  content: "";
+  content: "⌃";
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
-  font-size: 2em;
-  line-height: 50px;
+  font-size: 3.5rem;
+  line-height: 65px;
   color: #ffffff;
 }
 
@@ -63,13 +68,13 @@
   align-items: center;
 }
 
-.nav-menu {
+.nav-menu, .section1 {
   background: #0067f4;
 }
 
-.companyLogo img {
-  width: 70px;
-  height: 50px;
+#logoImg {
+  width: 65px;
+  height: 65px;
 }
 
 .nav-list ul {
@@ -82,7 +87,7 @@
 }
 
 .nav-list ul li {
-  padding: 10px 15px 0 15px;
+  padding: 17px 15px 0 15px;
 }
 
 .nav-list ul li a {
@@ -126,6 +131,7 @@
   border: none;
   border-radius: 5px;
   font-weight: bold;
+  font-size: 16px;
   border: 1px solid #ffffff;
 }
 
@@ -159,7 +165,167 @@
 }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.slider-body {
+  padding: 40px 0 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 590px;
+  overflow: hidden;
+}
+
+.slides {
+  position: absolute;
+  width: 300%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: 2s ease;
+}
+
+.slide {
+  width: 33.33%;
+  height: 100%;
+  position: relative;
+  float: left;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0067f4;
+}
+
+.slide-data {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 0 13% 5% 13%;
+}
+
+.slide-data h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 60px;
+  font-weight: bolder;
+  width: 100%;
+  line-height: 1.3;
+}
+
+.slide-data p {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  padding: 20px 0;
+}
+
+.slide-data button {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  color: #0067f4;
+  outline: none;
+  border: 1px solid #ffffff;
+  border-radius: 35px;
+  font-weight: bolder;
+  padding: 10px 40px;
+  width: 60%;
+  font-size: 18px;
+  transition: 0.4s linear;
+}
+
+.slide-data button:hover {
+  color: #ffffff;
+  background-color: #0067f4;
+}
+
+.slide-data img {
+  width: 60%;
+  height: 60%;
+}
+
+.slide-texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.stabilizeBtn {
+  flex: 1 1 auto;
+}
+
+.slider .arrows {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  outline: none;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  line-height: 1;
+  padding: 0 10px 7px 10px;
+  font-size: 40px;
+  color: #fff;
+  transition: 0.4s linear;
+}
+
+.slider .prev {
+  left: 5%;
+}
+
+.slider .next {
+  right: 5%;
+}
+
+.dots {
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  text-align: center;
+}
+
+.dots span {
+  width: 10px;
+  height: 10px;
+  border-radius: 20px;
+  margin: 0 6px;
+  background-color: #fff;
+  display: inline-block;
+  transition: 0.4s linear;
+}
+
+.dots span:hover {
+  background-color: #828282 !important;
+  border: 2px solid #fff;
+}
+
+.dot-active {
+  background-color: #828282 !important;
+  border: 2px solid #fff;
+}
+
 @media screen and (max-width: 766px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
   .navigationBar {
     height: 80px;
   }
@@ -208,18 +374,20 @@
     text-transform: uppercase;
     border: none;
     border-radius: 5px;
-    font-weight: bold;
+    font-weight: bolder;
+    font-size: 14px;
     border: 1px solid #ffffff;
   }
 
   #navBtnBurger {
+    font-size: 14px;
     visibility: visible;
     display: inline-block;
     padding: 10px 20px;
     color: #0067f4;
     background: #ffffff;
     border-radius: 5px;
-    font-weight: bold;
+    font-weight: bolder;
     border: 1px solid #ffffff;
   }
 
