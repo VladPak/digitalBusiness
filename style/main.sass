@@ -144,15 +144,6 @@
 
 .body-main
   flex: 1 1 auto
-
-.footer-content
-  height: 300px
-  display: flex
-  flex-direction: column
-  justify-content: center
-  align-items: center
-  background: #000000
-
 /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
 // .sticky + .body-main
 //   padding-top: 150px
@@ -463,14 +454,110 @@
   align-items: center
 
 .pricingPlanItem
-  width: 270px
-  height: 470px
+  width: 280px
+  height: 550px
   text-align: center
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-items: center
   border: none
-  border-radius: 5px
+  border-radius: 8px
+  padding-bottom: 20px
   background: linear-gradient(180deg, rgba(20,248,251,1) 0%, rgba(45,162,253,1) 35%, rgba(17,110,255,1) 80%)
 
 
+.planItemImage
+  img
+    +iconSize(180px, 180px)
+
+.planItemTitle
+  flex: 1 1 auto
+
+.planItemTitle
+  h5
+    font-family: $mainFont
+    font-size: 20px
+    text-transform: uppercase
+    color: #ffffff
+    font-weight: 600
+    letter-spacing: 2px
+
+.planItemTitle
+  p
+    font-family: $mainFont
+    font-size: 30px
+    color: #ffffff
+    font-weight: 700
+
+.planPrice
+  margin-left: 5px
+
+.planPros
+  list-style-type: none
+  padding-top: 20px
+  text-align: left
+  color: #ffffff
+  font-family: $mainFont
+
+.planPros
+  li
+    font-family: $mainFont
+    line-height: 2
+    font-size: 15px
+
+.planItemBtn
+  button
+    padding: 15px 30px
+    border-radius: 35px
+    border: none
+    background: $mainWhite
+    color: $mainBlue
+    font-size: 16px
+    text-transform: uppercase
+    font-family: $mainFont
+    font-weight: bolder
+
+.qaSection
+  background: $mainWhite
+
+
+.footer-content
+  height: auto
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  background: #000000
+  padding: 70px 0
+
+.footer-content
+  ul
+    padding-top: 60px
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    li
+      list-style-type: none
+      margin: 10px
+      a
+        img
+          +iconSize(25px, 25px)
+
+.infoTexts
+  text-align: center
+  padding-top: 15px
+  font-family: $mainFont
+  color: #ffffff
+
+.infoTextsCredits
+  a
+    color: $mainBlue
+
+.infoTextsCredits
+  a:hover
+    text-decoration: none
 
 //M.Queries for Responsiveness
 @import mediaQueries
