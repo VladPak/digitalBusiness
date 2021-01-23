@@ -1,67 +1,61 @@
-let slideIndex = 0;
-let slider = document.querySelector(".sliderForTestimonial");
-let slides = document.querySelector(".testimonialSlides");
-let slide = document.querySelectorAll(".slideTestimonial");
+let slideIndex1 = 0;
+let slider1 = document.querySelector(".sliderForTestimonial");
+let slides1 = document.querySelector(".testimonialSlides");
+let slide1 = document.querySelectorAll(".slideTestimonial");
 
 showslide();
 
-function plusslide(position) {
-    slideIndex += position;
+function plusslide(position1) {
+    slideIndex1 += position1;
 
-    if (slideIndex > slide.length) {
-        slideIndex = 1;
+    if (slideIndex1 > slide1.length) {
+        slideIndex1 = 1;
     }
-    else if (slideIndex < 1) {
-        slideIndex = slide.length;
-    }
-
-    // Defaultly active class is removed from all dots
-    for (let i = 0; i < dots.length; i++) {
-        const element = dots[i];
+    else if (slideIndex1 < 1) {
+        slideIndex1 = slide1.length;
     }
 
-    slides.style.left = `-${slideIndex - 1}00%`;
+
+
+    slides1.style.left = `-${slideIndex1 - 1}00%`;
 }
 
-function currentslide(index) {
-    if (index > slide.length) {
-        index = 1;
+function currentslide(index1) {
+    if (index1 > slide1.length) {
+        index1 = 1;
     }
-    else if (index < 1) {
-        index = slide.length;
+    else if (index1 < 1) {
+        index1 = slide1.length;
     }
 
-    slides.style.left = `-${index - 1}00%`;
+    slides1.style.left = `-${index1 - 1}00%`;
 
-    slideIndex = index;
+    slideIndex1 = index1;
 }
 
 function showslide() {
-    slideIndex++;
+    slideIndex1++;
 
-    if (slideIndex > slide.length) {
-        slideIndex = 1;
+    if (slideIndex1 > slide1.length) {
+        slideIndex1 = 1;
     }
-    else if (slideIndex < 1) {
-        slideIndex = slide.length;
+    else if (slideIndex1 < 1) {
+        slideIndex1 = slide1.length;
     }
-
-
-
-    slides.style.left = `-${slideIndex - 1}00%`;
+    slides1.style.left = `-${slideIndex1 - 1}00%`;
 }
 
 
-let interval = setInterval(()=> {
+let interval1 = setInterval(()=> {
     showslide();
-} , 3000);   // Change every image after 3 seconds
+} , 2500);   // Change every image after 3 seconds
 
-slider.addEventListener("mouseover" , ()=> {
-    clearInterval(interval);     // onHover Stop Changing every image after 3 seconds
+slider1.addEventListener("mouseover" , ()=> {
+    clearInterval(interval1);     // onHover Stop Changing every image after 3 seconds
 });
 
-slider.addEventListener("mouseout" , ()=> {
-    interval = setInterval(()=> {
+slider1.addEventListener("mouseout" , ()=> {
+    interval1 = setInterval(()=> {
         showslide();
-    } , 3000);    // on mouseout from slide then again start Changing every image after 3  seconds
+    } , 2500);    // on mouseout from slide then again start Changing every image after 3  seconds
 });
