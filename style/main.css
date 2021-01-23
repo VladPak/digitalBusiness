@@ -544,6 +544,70 @@
   text-decoration: none;
 }
 
+.qaSection {
+  padding: 70px 0;
+}
+
+.qaSectionContent {
+  display: flex;
+}
+
+.qaSectionTitles p {
+  text-transform: uppercase;
+  color: #0067f4;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+
+.qaSectionTitles h4 {
+  padding-top: 10px;
+  color: #000000;
+  font-size: 26px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+}
+
+.sectionImage img {
+  width: 450px;
+  height: 450px;
+}
+
+.qaSectionToggleQuestions {
+  padding-top: 40px;
+}
+
+.questionTitle {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+  line-height: 2;
+}
+
+#qaSpan {
+  float: right;
+  padding-left: 30px;
+  font-size: 15px;
+}
+
+.questionContent {
+  margin-top: 10px;
+  margin-left: 10px;
+  font-family: "Poppins", sans-serif;
+  display: none;
+}
+
+.questionSection {
+  padding: 18px 0;
+}
+
+.questionSection:first-child {
+  padding-top: 0;
+}
+
+.questionSection:last-child {
+  padding-bottom: 0;
+}
+
 @media screen and (max-width: 766px) {
   .container {
     width: 90%;
