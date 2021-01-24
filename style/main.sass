@@ -613,124 +613,8 @@
 .questionSection:last-child
   padding-bottom: 0
 
-
-.testimonialSection
-  padding: 0px 0
-  background: $mainWhite2
-
-.testimonialSectionContent
-  display: flex
-  flex-direction: row
-  justify-content: space-between
-  padding: 90px 0
-
-
-.testimonialSectionTitles
-  p
-    text-transform: uppercase
-    color: $mainBlue
-    font-size: 18px
-    font-family: $mainFont
-
-.testimonialSectionTitles
-  h4
-    padding-top: 10px
-    color: #000000
-    font-size: 26px
-    font-family: $mainFont
-    font-weight: bolder
-    width: 60%
-    line-height: 1.4
-
-#testimonialDescription
-  color: #828282
-  font-size: 16px
-  text-transform: capitalize
-  padding-top: 30px
-
-.sliderTestimonialBody
-    padding-left: 60px
-    display: flex
-    justify-content: center
-    align-items: center
-
-.sliderForTestimonial
-    position: relative
-    width: 370px
-    height: 350px
-    overflow: hidden
-
-.testimonialSlides
-    position: absolute
-    width: 300%
-    height: 100%
-    top: 0
-    left: 0
-    transition: 2s ease
-
-.slideTestimonial
-    width: 33.33%
-    height: 100%
-    position: relative
-    float: left
-    background-size: cover
-    background-position: center center
-    background-repeat: no-repeat
-
-.slideTestimonial::before
-  content: ""
-  position: absolute
-  top: 0
-  left: 0
-  width: 100%
-  height: 100%
-  background-color: $mainWhite
-  border-radius: 35px
-
-.slide-data-testimonial
-    position: absolute
-    top: 50%
-    transform: translateY(-50%)
-    width: 100%
-    display: flex
-    flex-direction: column
-    justify-content: center
-    color: #000000
-    padding: 0 13% 5% 13%
-
-.slide-data-testimonial
-  h4
-    font-size: 18px
-    color: $mainBlack
-    float: left
-    line-height: 1.3
-    font-weight: 400
-
-.slide-inner-data
-  padding-top: 40px
-  display: flex
-  flex-direction: row
-  justify-content: space-between
-
-.slide-inner-data
-  img
-    +iconSize(100px, 100px)
-    border-radius: 100%
-
-.slide-inner-titles
-  padding-right: 40px
-  display: flex
-  flex-direction: column
-  justify-content: center
-  align-items: flex-start
-  font-style: italic
-
-.slide-inner-titles
-  h5
-    font-weight: bolder
-
 .contactSection
-  background: $mainWhite
+  background: $mainWhite2
 
 .contactContent
   display: flex
@@ -860,10 +744,9 @@
   background: #ffffff
   resize: none
 
-
-
-
-
+.jcarousel
+  position: relative
+  overflow: hidden
 
 //M.Queries for Responsiveness
 @import mediaQueries

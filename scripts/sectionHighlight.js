@@ -1,11 +1,3 @@
-// var topPosition = window.scrollY;
-// var homeLink = $('a[href="#s1"]')
-//
-// if(topPosition == 0){
-//   homeLink.addClass("activeLink");
-// }
-
-
 const sections = document.querySelectorAll("section");
 const navLi = document.querySelectorAll(".nav-list ul li a");
 
