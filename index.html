@@ -88,7 +88,6 @@
               </div>
             </div>
           </section>
-
           <section id="s2" class="section2">
             <div class="servicesSection">
               <div class="container">
@@ -141,7 +140,6 @@
               </div>
             </div>
           </section>
-
           <section id="s3" class="section3">
             <div class="portfolioSection">
               <div class="container">
@@ -153,7 +151,6 @@
                     </div>
                   </div>
                   <div class="teamSection">
-
                     <div class="card" id="teamOne">
                       <div class="imgBox">
                         <img src="images/team-1.jpg" alt="">
@@ -170,7 +167,6 @@
                         </div>
                         <h3>Sayed Isam</h3>
                       </div>
-
                       <div class="card" id="teamOne">
                         <div class="imgBox">
                           <img src="images/team-2.jpg" alt="">
@@ -187,7 +183,6 @@
                           </div>
                           <h3>Sayed Isam</h3>
                         </div>
-
                         <div class="card" id="teamOne">
                           <div class="imgBox">
                             <img src="images/team-3.jpg" alt="">
@@ -242,7 +237,6 @@
               </div>
             </div>
           </section>
-
           <section id="s4" class="section4">
             <div class="pricingSection">
               <div class="container">
@@ -312,7 +306,6 @@
               </div>
             </div>
           </section>
-
           <section id="s5" class="section5">
             <div class="qaSection">
               <div class="container">
@@ -357,7 +350,6 @@
               </div>
             </div>
           </section>
-
           <section id="s6" class="section6">
             <div class="contactSection">
               <div class="container">
@@ -372,8 +364,6 @@
                     <div class="contactLocation">
                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11987.581595574806!2d69.27083796977539!3d41.31113910000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b2931f41f23%3A0x81095e06b654b845!2sSkver%20Im.%20Amira%20Temura!5e0!3m2!1sen!2s!4v1611425948796!5m2!1sen!2s" width="905px" height="550px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                     </div>
-
-
                     <div class="contactOther">
                       <div class="contactOtherItem">
                         <img src="images/placeholder.svg" alt="">
@@ -396,28 +386,27 @@
                         </div>
                       </div>
                     </div>
-
-
                   </div>
                   <div class="contactForm">
                     <h3><i><img class="miniIcon" src="images/envelopeForm.svg" alt=""></i><span>Leave</span> A Message.</h3>
-                    <div class="formGrid">
-                      <div class="formGridItem1">
-                        <label class="formLabel" for="">Name</label>
-                        <input class="formInput" type="text" name="" placeholder="Name">
-                      </div>
-                      <div class="formGridItem2">
-                        <label class="formLabel" for="">Email</label>
-                        <input class="formInput" type="email" name="" placeholder="Email">
-                      </div>
-                      <div class="formGridItem3">
-                        <label class="formLabel" for="">Message</label>
-                        <textarea class="formInputTA" name="txtarea" placeholder="Enter your message"></textarea>
-                      </div>
-                      <div class="formGridItem4">
-                        <button type="button" name="button">Send message</button>
-                      </div>
-                    </div>
+                      <form id="my-form" class="formGrid" action="https://formspree.io/f/xoqpryqy" method="post">
+                        <div class="formGridItem1">
+                          <label class="formLabel" for="name">Name</label>
+                          <input class="formInput" type="text" id="name" name="name" placeholder="Name">
+                        </div>
+                        <div class="formGridItem2">
+                          <label class="formLabel" for="email">Email</label>
+                          <input class="formInput" type="email" id="email" name="email" placeholder="Email">
+                        </div>
+                        <div class="formGridItem3">
+                          <label class="formLabel" for="message">Message</label>
+                          <textarea class="formInputTA" id="message" name="txtarea" placeholder="Enter your message"></textarea>
+                        </div>
+                        <div class="formGridItem4">
+                          <button type="submit" name="button">Send message</button>
+                        </div>
+                      </form>
+                      <div id="successNotice" class=""></div>
                   </div>
                 </div>
               </div>
@@ -441,7 +430,6 @@
         </div>
       </div>
   </div>
-
   <div id="popupDownload" class="popUpDownload">
     <div class="pop-body">
       <div class="pop-content">
@@ -451,7 +439,7 @@
       </div>
     </div>
   </div>
-
+  <script type="text/javascript" src="scripts/sendMessage.js"></script>
   <script type="text/javascript" src="scripts/openClosePopUp.js"></script>
   <script type="text/javascript" src="scripts/showHideQA.js"></script>
   <script type="text/javascript" src="scripts/carousel.js"></script>

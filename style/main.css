@@ -824,6 +824,43 @@
   resize: none;
 }
 
+#successNotice {
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  color: #333333;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  margin-top: 40px;
+}
+
+#successNotice.success {
+  background: rgba(59, 255, 82, 0.7);
+  animation: successMsg 3s ease forwards;
+}
+
+#successNotice.error {
+  background: rgba(242, 5, 5, 0.7);
+  color: #ffffff;
+  animation: successMsg 3s ease forwards;
+}
+
+@keyframes successMsg {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  80% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
 .jcarousel {
   position: relative;
   overflow: hidden;
