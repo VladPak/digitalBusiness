@@ -268,14 +268,11 @@
   color: #fff
   transition: 0.4s linear
 
-
-
 .slider .prev
     left: 5%
 
 .slider .next
     right: 5%
-
 
 .dots
     position: absolute
@@ -845,6 +842,11 @@
     color: #ffffff
     animation: successMsg 3s ease forwards
 
+#successNotice.invalidInput
+    background: rgba(255, 118, 33, 0.7)
+    color: #000000
+    animation: successMsg 3s ease forwards
+
 @keyframes successMsg
   0%
     opacity: 1
@@ -855,7 +857,7 @@
   100%
     opacity: 0
     pointer-events: none
-    
+
 .jcarousel
   position: relative
   overflow: hidden
