@@ -403,6 +403,7 @@
 .itemInnerP3 a {
   font-size: 16px;
   color: #0067f4;
+  text-decoration: none;
   text-transform: uppercase;
   font-weight: bolder;
 }
@@ -1361,6 +1362,11 @@
     font-size: 16px;
     margin-top: 15px;
     margin-bottom: 20px;
+  }
+
+  .miniIcon {
+    display: none;
+    visibility: hidden;
   }
 
   .footer-content {
