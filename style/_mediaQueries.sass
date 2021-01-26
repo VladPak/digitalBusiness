@@ -95,7 +95,7 @@
 
   .slide-data
     h1
-      font-size: 35px
+      font-size: 40px
 
   .slide-data
     p
@@ -125,4 +125,308 @@
       right: 3%
 
   .dots
-      bottom: 0%
+    bottom: 0%
+
+  %commonStyleP
+    padding-top: 20px
+    padding-bottom: 30px
+    font-size: 15px
+    width: 80%
+    margin: 0 auto
+    color: #828282
+
+  %commonStyleMain
+    padding: 50px 0 30px 0
+
+  %commonStyleH3
+    font-size: 45px
+
+  .servicesDepartments
+    padding-top: 0
+    flex-direction: column
+
+  .servicesDepartmentItem
+    border: 2px solid $mainBlue
+    border-radius: 15px
+    width: 400px
+    flex-direction: column
+    padding: 30px
+    margin: 30px 0px
+
+  .itemInnerP1
+    img
+      +iconSize(100px, 100px)
+
+  .itemInnerP1
+    h3
+      font-size: 25px
+      padding-right: 15px
+
+  .itemInnerP2
+    padding: 15px 0
+    flex: 1 1 auto
+
+  .itemInnerP2
+    p
+      padding: 0px 15px
+      color: #000000
+      font-size: 15px
+
+  .itemInnerP3
+    a
+      padding: 0 15px
+      font-size: 16px
+      color: $mainBlue
+      text-transform: uppercase
+      font-weight: bolder
+
+  .teamSection
+    padding-top: 20px
+    flex-direction: column
+
+  .card
+    margin: 30px 0
+
+  .card:first-child
+    margin-top: 0
+
+  .imgSocial
+    ul
+      margin-bottom: 0px
+
+  .pricingPlans
+    flex-direction: column
+    padding-top: 35px
+
+  .pricingPlanItem
+    width: 300px
+    height: 440px
+    margin: 30px 0
+
+  .pricingPlanItem:first-child
+    margin-top: 0
+
+  .planItemImage
+    img
+      +iconSize(120px, 120px)
+
+  .planItemTitle
+    h5
+      font-size: 20px
+
+  .planPros
+    padding-top: 12px
+
+  .planPros
+    li
+      font-size: 14px
+
+  .planItemBtn
+    button
+      padding: 10px 70px
+      font-size: 13px
+
+
+  .qaSection
+    padding: 50px 0
+
+  .qaSectionContent
+    display: block
+
+  .qaSectionTitles
+    text-align: center
+
+
+  .qaSectionTitles
+    h4
+      padding-top: 15px
+      line-height: 1.5
+
+  .sectionImage
+    img
+      display: none
+      visibility: hidden
+
+  .qaSectionToggleQuestions
+    padding-top: 50px
+
+  .questionTitle
+    font-family: $mainFont
+    font-size: 18px
+    line-height: 1.7
+
+  .qaSpan
+    padding-left: 10px
+    font-size: 12px
+
+  .questionSection
+    padding: 20px 0
+
+  .questionContent
+    font-size: 16px
+    color: $mainBlue
+    margin-top: 20px
+
+
+  .contactLocation
+    iframe
+      width: 100%
+      height: 400px
+
+  .contactContent
+    padding: 10px 0 0 0
+
+  .contactOther
+    flex-direction: column
+    align-items: flex-start
+    padding-top: 10px
+
+  .contactOtherItem
+    display: flex
+    flex-direction: row
+    margin-left: 0px
+    margin-top: 30px
+
+  .contactOtherItem
+    img
+      +iconSize(35px, 35px)
+
+  .contactPhs
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    flex-direction: column
+
+  .contactPhs
+    p
+      font-size: 16px
+      line-height: 1.2
+
+  .contactForm::before
+    content: ""
+    display: block
+    margin: 0 auto
+    width: 85%
+    border-bottom: 1px solid #000000
+    border-radius: 55px
+
+  .contactForm
+    padding-top: 35px
+
+  .miniIcon
+    +iconSize(45px, 45px)
+
+  .contactForm
+    span
+      font-size: 25px
+
+  .contactForm
+    h3
+      font-size: 25px
+      text-align: center
+
+  .formGrid
+    display: grid
+    grid-template: repeat(5, auto) / repeat(5, auto)
+    gap: 25px
+
+  .formGridItem1
+    grid-row: 1/2
+    grid-column: 1/6
+
+  .formGridItem2
+    grid-row: 2/3
+    grid-column: 1/6
+
+  .formGridItem3
+    grid-row: 3/4
+    grid-column: 1/6
+
+  .formGridItem4
+    grid-row: 4/5
+    grid-column: 1/6
+
+  .formGridItem4
+    button
+      width: 100%
+      margin-top: 25px
+
+  #successNotice
+    font-size: 16px
+    margin-top: 15px
+    margin-bottom: 20px
+
+  //
+  // .popUpDownload
+  //   +iconSize(100%, 100%)
+  //   position: fixed
+  //   z-index: 100000000000
+  //   background: rgba(0,0,0, 0.7)
+  //   top: 0
+  //   left: 0
+  //   overflow-y: auto
+  //   overflow-x: hidden
+  //   visibility: hidden
+  //   opacity: 0
+  //   transition: all 0.6s ease 0s
+  //
+  //   .openPopUp
+  //     visibility: visible
+  //     opacity: 1
+  //
+  //   .pop-body
+  //     min-height: 100vh
+  //     display: flex
+  //     justify-content: center
+  //     align-items: center
+  //     padding: 0px 10px
+  //
+  //   .pop-content
+  //     background: #ffffff
+  //     color: #000000
+  //     width: 450px
+  //     padding: 25px
+  //     position: relative
+  //     font-family: $mainFont
+  //     text-align: center
+  //     border-radius: 20px
+  //
+  //   .pop-close
+  //     position: absolute
+  //     top: -7%
+  //     right: -5%
+  //     font-size: 20px
+  //     font-weight: bolder
+  //     padding: 5px 15px
+  //     color: $mainBlue
+  //     border: 2px solid $mainBlue
+  //     border-radius: 100%
+  //
+  //   .pop-close:hover
+  //     text-decoration: none
+  //     color: $mainWhite
+  //     background: $mainBlue
+  //
+  //   .pop-title
+  //     font-size: 16px
+  //     font-weight: bolder
+  //     color: #000000
+  //
+  //   .pop-text
+  //     margin-top: 25px
+  //     letter-spacing: 1.5px
+  //     color: #333333
+
+
+  .footer-content
+    padding: 60px 0
+
+  .footer-content
+    ul
+      padding-top: 0px
+
+  .footerMainLogo
+    display: none
+
+  .infoTexts
+    padding-top: 25px

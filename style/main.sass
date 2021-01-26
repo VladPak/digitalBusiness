@@ -589,10 +589,6 @@
     font-family: $mainFont
     font-weight: bolder
 
-.qaSection
-  background: $mainWhite
-
-
 .footer-content
   height: auto
   display: flex
@@ -630,10 +626,8 @@
   a:hover
     text-decoration: none
 
-
-
-
 .qaSection
+  background: $mainWhite
   padding: 70px 0
 
 .qaSectionContent
@@ -708,6 +702,15 @@
 
 .contactH3
   @extend %commonStyleP
+
+.contactLocation
+  iframe
+    width: 905px
+    height: 550px
+    frameborder: 0
+    border: 0
+    aria-hidden: false
+    tabindex: 0
 
 .contactAddressEmailPhone
   align-items: center
@@ -835,7 +838,6 @@
 #successNotice.success
     background: rgba(59, 255, 82, 0.7)
     animation: successMsg 3s ease forwards
-
 
 #successNotice.error
     background: rgba(242, 5, 5, 0.7)
