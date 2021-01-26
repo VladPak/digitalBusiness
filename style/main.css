@@ -377,6 +377,7 @@
 }
 
 .itemInnerP1 {
+  font-family: "Poppins", sans-serif;
   display: flex;
   flex-direction: row;
   justify-content: center;
