@@ -30,6 +30,10 @@
   position: relative;
 }
 
+.show {
+  display: block !important;
+}
+
 #btnUp {
   display: inline-block;
   background-color: #0067f4;
