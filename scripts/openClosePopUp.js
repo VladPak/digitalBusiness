@@ -1,5 +1,9 @@
 var btnForOpen = document.getElementById("popupDownload");
 
+document.getElementById("navBtnDowload").addEventListener("click", function() {
+  btnForOpen.classList.add("openPopUp");
+  disableScrolling();
+});
 
 document.getElementById("navigationBtn").addEventListener("click", function() {
   btnForOpen.classList.add("openPopUp");
