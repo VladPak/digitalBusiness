@@ -836,6 +836,7 @@
 }
 
 #successNotice {
+  font-family: "Poppins", sans-serif;
   width: 100%;
   text-align: center;
   padding: 5px;
@@ -1263,6 +1264,10 @@
     margin-top: 20px;
   }
 
+  .contactContent {
+    padding: 30px 0 0 0;
+  }
+
   .contactLocation iframe {
     border-radius: 10px;
     border: 2px solid #000000;
@@ -1314,12 +1319,12 @@
   }
 
   .contactForm {
-    padding-top: 35px;
+    padding-top: 30px;
   }
 
   .miniIcon {
-    width: 45px;
-    height: 45px;
+    display: none;
+    visibility: hidden;
   }
 
   .contactForm span {
@@ -1327,6 +1332,7 @@
   }
 
   .contactForm h3 {
+    margin-top: 40px;
     font-size: 25px;
     text-align: center;
   }
@@ -1366,11 +1372,6 @@
     font-size: 16px;
     margin-top: 15px;
     margin-bottom: 20px;
-  }
-
-  .miniIcon {
-    display: none;
-    visibility: hidden;
   }
 
   .footer-content {
