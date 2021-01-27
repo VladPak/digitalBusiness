@@ -959,7 +959,7 @@
   }
 
   .navigationBar {
-    height: 75px;
+    height: 70px;
   }
 
   .nav-list ul li {
@@ -967,7 +967,7 @@
   }
 
   .nav-list ul {
-    top: 75px;
+    top: 70px;
     left: -100%;
     display: flex;
     flex-direction: column;
