@@ -3,13 +3,13 @@
     var sticky = header.offsetTop;
 
     if(window.pageYOffset > sticky){
-      var navHeight = 90;
+      var navHeight = 80;
       var id  = $(this).attr('href');
       var top = $(id).offset().top; // получаем координаты блока
       $('body, html').animate({scrollTop: top - navHeight}, 800); // плавно переходим к блоку
     }
     else{
-      var navHeight = 180;
+      var navHeight = 160;
       var id  = $(this).attr('href');
       var top = $(id).offset().top; // получаем координаты блока
       $('body, html').animate({scrollTop: top - navHeight}, 800); // плавно переходим к блоку
