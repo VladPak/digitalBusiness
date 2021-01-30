@@ -669,6 +669,7 @@
 }
 
 .questionContent {
+  color: #0067f4;
   margin-top: 10px;
   margin-left: 10px;
   font-family: "Poppins", sans-serif;
@@ -701,6 +702,8 @@
 .contactLocation iframe {
   width: 905px;
   height: 550px;
+  border-radius: 10px;
+  border: 2px solid #828282;
   frameborder: 0;
   border: 0;
   aria-hidden: false;
@@ -1411,6 +1414,43 @@
 
   .infoTexts {
     padding-top: 25px;
+  }
+}
+@media screen and (max-width: 1110px) {
+  .pricingPlanItem {
+    width: 250px;
+    height: 500px;
+  }
+
+  .planItemImage img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .planItemTitle h5 {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+  }
+
+  .planItemTitle p {
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+  }
+
+  .planPros {
+    font-family: "Poppins", sans-serif;
+  }
+
+  .planPros li {
+    font-family: "Poppins", sans-serif;
+    line-height: 2;
+    font-size: 14px;
+  }
+
+  .contactLocation iframe {
+    width: 780px;
+    height: 550px;
   }
 }
 
