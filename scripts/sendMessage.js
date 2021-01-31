@@ -10,6 +10,7 @@
     // Success and Error functions for after the form is submitted
     function success() {
       form.reset();
+      status.classList.remove("error");
       status.classList.add("success");
       status.innerHTML = "Thanks! Your message was sent successfully!";
       setTimeout(location.reload.bind(location), 300);
