@@ -12,7 +12,7 @@
       form.reset();
       status.classList.add("success");
       status.innerHTML = "Thanks! Your message was sent successfully!";
-      setTimeout(location.reload.bind(location), 200);
+      setTimeout(location.reload.bind(location), 300);
     }
 
     function error() {
