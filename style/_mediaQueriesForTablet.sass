@@ -1,6 +1,18 @@
-@media screen and (max-width: 1110px) and (min-width: 766px)
+@media screen and (max-width: 1100px) and (min-width: 766px)
+
+  .itemInnerP1
+    img
+      +iconSize(50px, 50px)
+
+  .itemInnerP1
+    h3
+      font-size: 20px
+      text-align: center
+
+
+
   .pricingPlanItem
-    width: 250px
+    width: 100%
     height: 500px
 
   .planItemImage
@@ -29,16 +41,112 @@
 
   .contactLocation
     iframe
-      width: 780px
+      width: 100%
       height: 550px
-  // .planItemBtn
-  //   button
-  //     padding: 15px 30px
-  //     border-radius: 35px
-  //     border: none
-  //     background: $mainWhite
-  //     color: $mainBlue
-  //     font-size: 16px
-  //     text-transform: uppercase
-  //     font-family: $mainFont
-  //     font-weight: bolder
+
+@media screen and (max-width: 980px) and (min-width: 766px)
+    .navigationBar
+      height: 55px
+
+    .nav-list
+      ul
+        li
+          padding: 13px
+
+    .nav-list
+      ul
+        top: 55px
+        left: -100%
+        +flexConfig(flex, column, space-between, center)
+        width: 100%
+        height: auto
+        overflow: auto
+        position: absolute
+        background: $mainBlue
+        transition: all 0.4s ease
+
+    #logoImg
+      align-self: flex-start
+      +iconSize(45px, 45px)
+
+    #navigationBtn
+      display: none
+      visibility: none
+
+    .responsiveBtns
+      display: flex
+      justify-content: center
+      align-items: center
+
+    #navBtnDowload
+      margin-right: 25px
+      visibility: visible
+      display: inline-block
+      padding: 10px 20px
+      color: $mainBlue
+      background: $mainWhite
+      text-transform: uppercase
+      border: none
+      border-radius: 5px
+      font-weight: bolder
+      font-size: 14px
+      border: 1px solid $mainWhite
+
+    #navBtnBurger
+      font-size: 14px
+      visibility: visible
+      display: inline-block
+      padding: 10px 20px
+      color: $mainBlue
+      background: $mainWhite
+      border-radius: 5px
+      font-weight: bolder
+      border: 1px solid $mainWhite
+
+    #navBtnBurger:focus
+      outline: none
+
+    #navBtnDowload:focus
+      outline: none
+
+    .open-menu-list
+      left: 0 !important
+
+    .block-scrolling
+      overflow: hidden
+
+    .pricingPlanItem
+      width: 100%
+      height: 420px
+
+    .planItemImage
+      img
+        +iconSize(100px, 100px)
+
+    .planItemTitle
+      h5
+        font-family: $mainFont
+        font-size: 18px
+
+    .planItemTitle
+      p
+        font-family: $mainFont
+        font-size: 18px
+        font-weight: 500
+
+    .planPros
+      font-family: $mainFont
+
+    .planPros
+      li
+        font-family: $mainFont
+        line-height: 2
+        font-size: 13px
+
+    .sectionImage
+      display: none
+      visibility: hidden
+
+@media screen and (max-width: 870px) and (min-width: 766px)
+    .card:last-child
+      margin-top: 40px
