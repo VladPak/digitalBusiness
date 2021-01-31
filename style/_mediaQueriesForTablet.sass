@@ -2,7 +2,7 @@
 
   .itemInnerP1
     img
-      +iconSize(50px, 50px)
+      +setWidthAndHeight(50px, 50px)
 
   .itemInnerP1
     h3
@@ -15,7 +15,7 @@
 
   .planItemImage
     img
-      +iconSize(140px, 140px)
+      +setWidthAndHeight(140px, 140px)
 
   .planItemTitle
     h5
@@ -80,7 +80,7 @@
 
     #logoImg
       align-self: flex-start
-      +iconSize(45px, 45px)
+      +setWidthAndHeight(45px, 45px)
 
     #navigationBtn
       display: none
@@ -134,7 +134,7 @@
 
     .planItemImage
       img
-        +iconSize(100px, 100px)
+        +setWidthAndHeight(100px, 100px)
 
     .planItemTitle
       h5
@@ -168,3 +168,8 @@
 @media screen and (max-width: 870px) and (min-width: 766px)
     .card:last-child
       margin-top: 40px
+
+@media screen and (max-width: 1366px)
+    .miniIcon
+      display: none
+      visibility: hidden

@@ -316,6 +316,8 @@ template {
 .wrapper {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
 }
 
 #navBtnDowload {
@@ -330,6 +332,7 @@ template {
 
 .container {
   width: 90%;
+  height: auto;
   margin: 0 auto;
 }
 
@@ -360,9 +363,9 @@ template {
 
 #btnUp::after {
   content: "⌃";
+  font-size: 3.5rem;
   font-weight: normal;
   font-style: normal;
-  font-size: 3.5rem;
   line-height: 65px;
   color: #ffffff;
 }
@@ -391,11 +394,9 @@ template {
   justify-content: space-between;
   align-items: center;
 }
-
 .nav-list ul li {
   padding: 17px 15px 0 15px;
 }
-
 .nav-list ul li a {
   font-size: 16px;
   font-weight: bold;
@@ -436,12 +437,13 @@ template {
   padding: 15px 30px;
   border: none;
   border-radius: 5px;
-  font-weight: bold;
   font-size: 16px;
+  font-weight: bold;
 }
 
 #navigationBtn:hover {
   font-size: 18px;
+  font-weight: bolder;
   -webkit-transition: 0.5s ease-in-out;
 }
 
@@ -468,6 +470,7 @@ template {
 .slider-body {
   padding: 40px 0 20px 0;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -514,6 +517,7 @@ template {
   transform: translateY(-50%);
   width: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   color: #ffffff;
@@ -529,10 +533,13 @@ template {
 
 .slide-data p {
   font-size: 20px;
+  font-weight: normal;
   padding: 20px 0;
 }
 
 .slide-data button {
+  font-size: 18px;
+  font-weight: bolder;
   text-align: center;
   text-transform: uppercase;
   background-color: #ffffff;
@@ -540,10 +547,8 @@ template {
   outline: none;
   border: 1px solid #ffffff;
   border-radius: 35px;
-  font-weight: bolder;
   padding: 10px 40px;
   width: 40%;
-  font-size: 18px;
   transition: 0.4s linear;
 }
 
@@ -561,6 +566,7 @@ template {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: stretch;
 }
 
 .stabilizeBtn {
@@ -576,8 +582,9 @@ template {
   border: 1px solid #ffffff;
   border-radius: 5px;
   line-height: 1;
-  padding: 0 10px 7px 10px;
+  padding: 0 10px 0 10px;
   font-size: 40px;
+  font-weight: normal;
   color: #ffffff;
   transition: 0.4s linear;
 }
@@ -617,7 +624,7 @@ template {
   border: 2px solid #ffffff;
 }
 
-.servicesSection {
+.servicesSection, .pricingSection, .contactSection {
   background: #f4f6f7;
 }
 
@@ -625,6 +632,7 @@ template {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: stretch;
   padding: 30px 0 80px 0;
 }
 
@@ -640,9 +648,9 @@ template {
 }
 
 .contactH3, .pricingTitles p, .portfolioTitles p, .servicesTitles p {
-  padding-top: 20px;
-  padding-bottom: 50px;
+  padding: 20px 0 50px 0;
   font-size: 18px;
+  font-weight: normal;
   width: 50%;
   margin: 0 auto;
   color: #828282;
@@ -668,11 +676,12 @@ template {
   border: 1px solid #0067f4;
   border-radius: 5px;
   background: #ffffff;
-  height: auto;
   width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: stretch;
   padding: 18px;
   overflow: hidden;
   margin: 0 20px;
@@ -703,10 +712,12 @@ template {
   padding: 15px 0;
   color: #000000;
   font-size: 15px;
+  font-weight: normal;
 }
 
 .itemInnerP3 a {
   font-size: 16px;
+  font-weight: bolder;
   color: #0067f4;
   text-decoration: none;
   text-transform: uppercase;
@@ -725,9 +736,10 @@ template {
 .teamSection {
   text-align: center;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -769,16 +781,21 @@ template {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: stretch;
   text-align: center;
 }
 
 .imgInfo span {
   margin-top: 35px;
   font-size: 20px;
+  font-weight: normal;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
 
+.imgSocial {
+  margin-top: 100px;
+}
 .imgSocial img {
   width: 30px;
   height: 30px;
@@ -787,6 +804,7 @@ template {
 .imgSocial ul {
   margin-bottom: 50px;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
@@ -803,10 +821,6 @@ template {
   background: #0067f4;
   transform: translateY(-100%);
   transition: all 0.35s ease;
-}
-
-.pricingSection {
-  background: #f4f6f7;
 }
 
 .pricingPlans {
@@ -847,16 +861,16 @@ template {
 .planItemTitle h5 {
   margin-top: 20px;
   font-size: 25px;
+  font-weight: bold;
   text-transform: uppercase;
   color: #ffffff;
-  font-weight: bold;
   letter-spacing: 2px;
 }
 
 .planItemTitle p {
   font-size: 35px;
-  color: #ffffff;
   font-weight: bolder;
+  color: #ffffff;
   margin-top: 15px;
 }
 
@@ -874,17 +888,18 @@ template {
 .planPros li {
   line-height: 2;
   font-size: 18px;
+  font-weight: normal;
 }
 
 .planItemBtn button {
+  font-size: 16px;
+  font-weight: bolder;
   padding: 15px 30px;
   border-radius: 35px;
   border: none;
   background: #ffffff;
   color: #0067f4;
-  font-size: 16px;
   text-transform: uppercase;
-  font-weight: bolder;
 }
 
 .footer-content {
@@ -934,21 +949,23 @@ template {
 
 .qaSectionContent {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
 
 .qaSectionTitles p {
+  font-size: 18px;
+  font-weight: normal;
   text-transform: uppercase;
   color: #0067f4;
-  font-size: 18px;
 }
 
 .qaSectionTitles h4 {
-  padding-top: 10px;
-  color: #000000;
   font-size: 26px;
   font-weight: bolder;
+  padding-top: 10px;
+  color: #000000;
 }
 
 .sectionImage img {
@@ -962,20 +979,21 @@ template {
 
 .questionTitle {
   font-size: 15px;
+  font-weight: normal;
   cursor: pointer;
   line-height: 2;
 }
 
 .qaSpan {
+  font-size: 15px;
+  font-weight: normal;
   float: right;
   padding-left: 30px;
-  font-size: 15px;
 }
 
 .questionContent {
   color: #0067f4;
-  margin-top: 10px;
-  margin-left: 10px;
+  margin: 10px 0 0 10px;
   display: none;
 }
 
@@ -991,14 +1009,11 @@ template {
   padding-bottom: 0;
 }
 
-.contactSection {
-  background: #f4f6f7;
-}
-
 .contactContent {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: stretch;
   padding: 30px 0 50px 0;
 }
 
@@ -1020,14 +1035,15 @@ template {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: stretch;
   padding-top: 50px;
 }
 
 .contactOtherItem {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
 }
 
 .contactOtherItem p {
@@ -1042,9 +1058,9 @@ template {
 
 .contactPhs {
   display: inline-block;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
 
 .contactPhs p {
@@ -1079,13 +1095,13 @@ template {
 }
 
 .formGridItem1 {
-  grid-row: 1/2;
-  grid-column: 1/2;
+  grid-row: 0.5;
+  grid-column: 0.5;
 }
 
 .formGridItem2 {
-  grid-row: 1/2;
-  grid-column: 2/3;
+  grid-row: 0.5;
+  grid-column: 0.6666666667;
 }
 
 .formGridItem3 {
@@ -1111,12 +1127,15 @@ template {
 
 .formLabel {
   display: block;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: bolder;
   color: #828282;
 }
 
 .formInput {
   font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 1.5px;
   color: #828282;
   border: 2px solid #828282;
   border-radius: 5px;
@@ -1126,7 +1145,9 @@ template {
 }
 
 .formInputTA {
+  letter-spacing: 1.5px;
   font-size: 14px;
+  font-weight: normal;
   color: #828282;
   border: 2px solid #828282;
   border-radius: 5px;
@@ -1142,6 +1163,7 @@ template {
   padding: 5px;
   color: #333333;
   font-size: 20px;
+  font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 2px;
   border-radius: 5px;
@@ -1206,6 +1228,7 @@ template {
 .pop-body {
   min-height: 100vh;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 0px 10px;
@@ -1222,11 +1245,11 @@ template {
 }
 
 .pop-close {
+  font-size: 20px;
+  font-weight: bolder;
   position: absolute;
   top: 4%;
   right: 4%;
-  font-size: 20px;
-  font-weight: bolder;
   color: #0067f4;
   border: none;
   background: none;
@@ -1908,6 +1931,12 @@ template {
 @media screen and (max-width: 870px) and (min-width: 766px) {
   .card:last-child {
     margin-top: 40px;
+  }
+}
+@media screen and (max-width: 1366px) {
+  .miniIcon {
+    display: none;
+    visibility: hidden;
   }
 }
 

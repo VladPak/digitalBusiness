@@ -11,7 +11,7 @@ $mainBlue2: #00a4ff
 $mainFont: 'Poppins', sans-serif
 
 //Mixin: iconSizes
-=iconSize($sizeW, $sizeH)
+=setWidthAndHeight($sizeW, $sizeH)
   width: $sizeW
   height: $sizeH
 
@@ -22,6 +22,11 @@ $mainFont: 'Poppins', sans-serif
   justify-content: $justContent
   align-items: $flexAlign
 
+//Mixin for Font Size and Font Weight
+=setFontSizeAndWeight($fontSizeValue, $fontWeightValue)
+  font-size: $fontSizeValue
+  font-weight: $fontWeightValue
+
 //Mixin Grid Template
 =gridTemplateConfig($gridDisplay, $gridTemplateRows, $gridTemplateColumns, $gridGap)
   display: $gridDisplay
@@ -29,7 +34,7 @@ $mainFont: 'Poppins', sans-serif
   gap: $gridGap
 
 //Mixin Grid Item
-=gridItemConfig($gridRowStart, $gridRowEnd, $gridColStart, $gridColEnd, $itemOrder)
+=gridItemConfig($gridRowStart, $gridRowEnd, $gridColStart, $gridColEnd)
   grid-row: $gridRowStart / $gridRowEnd
   grid-column: $gridColStart / $gridColEnd
 
