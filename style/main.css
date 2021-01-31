@@ -339,7 +339,6 @@ template {
 }
 
 #btnUp {
-  display: inline-block;
   background-color: #0067f4;
   width: 50px;
   height: 50px;
@@ -439,7 +438,6 @@ template {
   border-radius: 5px;
   font-weight: bold;
   font-size: 16px;
-  border: 1px solid #ffffff;
 }
 
 #navigationBtn:hover {
@@ -518,7 +516,7 @@ template {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: #ffffff;
   padding: 0 13% 5% 13%;
 }
 
@@ -580,7 +578,7 @@ template {
   line-height: 1;
   padding: 0 10px 7px 10px;
   font-size: 40px;
-  color: #fff;
+  color: #ffffff;
   transition: 0.4s linear;
 }
 
@@ -604,19 +602,19 @@ template {
   height: 10px;
   border-radius: 20px;
   margin: 0 6px;
-  background-color: #fff;
+  background-color: #ffffff;
   display: inline-block;
   transition: 0.4s linear;
 }
 
 .dots span:hover {
   background-color: #828282 !important;
-  border: 2px solid #fff;
+  border: 2px solid #ffffff;
 }
 
 .dot-active {
   background-color: #828282 !important;
-  border: 2px solid #fff;
+  border: 2px solid #ffffff;
 }
 
 .servicesSection {
@@ -716,7 +714,7 @@ template {
 }
 
 .itemInnerP3 a:hover {
-  color: pink;
+  color: #828282;
   text-decoration: none;
 }
 
@@ -1009,7 +1007,6 @@ template {
   border-radius: 10px;
   border: 2px solid #828282;
   frameborder: 0;
-  border: 0;
   aria-hidden: false;
   tabindex: 0;
 }

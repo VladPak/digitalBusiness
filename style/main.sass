@@ -28,7 +28,6 @@
   position: relative
 
 #btnUp
-  display: inline-block
   background-color: $mainBlue
   width: 50px
   height: 50px
@@ -52,7 +51,7 @@
   font-style: normal
   font-size: 3.5rem
   line-height: 65px
-  color: #ffffff
+  color: $mainWhite
 
 .navigationBar
   +flexConfig(flex, row, space-between, center)
@@ -93,7 +92,7 @@
         display: block
         width: 0
         height: 5px
-        background: linear-gradient(to right, #ffffff 0%, #00a4ff 100%)
+        background: linear-gradient(to right, $mainWhite 0%, $mainBlue2 100%)
         transition: width 0.3s
 
 .nav-list
@@ -108,7 +107,7 @@
   display: block !important
   width: 100% !important
   height: 5px !important
-  background: linear-gradient(to right, #ffffff 0%, #00a4ff 100%) !important
+  background: linear-gradient(to right, $mainWhite 0%, $mainBlue2 100%) !important
   transition: width 0.3s !important
 
 #navigationBtn
@@ -121,7 +120,7 @@
   border-radius: 5px
   font-weight: bold
   font-size: 16px
-  border: 1px solid $mainWhite
+  // border: 1px solid $mainWhite
 
 #navigationBtn:hover
     font-size: 18px
@@ -141,7 +140,6 @@
   top: 0
   width: 100%
   @extend %changeStyleNav
-  // padding-top: 30px
 
 .body-main
   flex: 1 1 auto
@@ -192,12 +190,11 @@
   display: flex
   justify-content: center
   align-items: center
-  color: #fff
+  color: $mainWhite
   padding: 0 13% 5% 13%
 
 .slide-data
   h1
-    // font-family: $mainFont
     font-size: 60px
     font-weight: bolder
     width: 100%
@@ -205,19 +202,17 @@
 
 .slide-data
   p
-    // font-family: $mainFont
     font-size: 20px
     padding: 20px 0
 
 .slide-data
   button
-    // font-family: $mainFont
     text-align: center
     text-transform: uppercase
-    background-color: #ffffff
+    background-color: $mainWhite
     color: $mainBlue
     outline: none
-    border: 1px solid #ffffff
+    border: 1px solid $mainWhite
     border-radius: 35px
     font-weight: bolder
     padding: 10px 40px
@@ -227,7 +222,7 @@
 
 .slide-data
   button:hover
-    color: #ffffff
+    color: $mainWhite
     background-color: $mainBlue
 
 .slide-data
@@ -248,12 +243,12 @@
   transform: translateY(-50%)
   background: none
   outline: none
-  border: 1px solid #ffffff
+  border: 1px solid $mainWhite
   border-radius: 5px
   line-height: 1
   padding: 0 10px 7px 10px
   font-size: 40px
-  color: #fff
+  color: $mainWhite
   transition: 0.4s linear
 
 .slider .prev
@@ -274,23 +269,22 @@
     height: 10px
     border-radius: 20px
     margin: 0 6px
-    background-color: #fff
+    background-color: $mainWhite
     display: inline-block
     transition: 0.4s linear
 
 .dots span:hover
-    background-color: #828282 !important
-    border: 2px solid #fff
+    background-color: $mainGray !important
+    border: 2px solid $mainWhite
 
 .dot-active
-    background-color: #828282 !important
-    border: 2px solid #fff
+    background-color: $mainGray !important
+    border: 2px solid $mainWhite
 
 .servicesSection
   background: $mainWhite2
 
 %commonStyleMain
-  // font-family: $mainFont
   display: flex
   flex-direction: column
   justify-content: center
@@ -301,19 +295,17 @@
 
 %commonStyleH3
   font-size: 40px
-  // font-family: $mainFont
   font-weight: bolder
-  color: #000000
+  color: $mainBlack
   letter-spacing: 2px
 
 %commonStyleP
-  // font-family: $mainFont
   padding-top: 20px
   padding-bottom: 50px
   font-size: 18px
   width: 50%
   margin: 0 auto
-  color: #828282
+  color: $mainGray
 
 .servicesContent
   @extend %commonStyleMain
@@ -341,7 +333,6 @@
   margin-left: 0
 
 .servicesDepartmentItem
-  // font-family: $mainFont
   border: 1px solid $mainBlue
   border-radius: 5px
   background: $mainWhite
@@ -355,7 +346,6 @@
   margin: 0 20px
 
 .itemInnerP1
-  // font-family: $mainFont
   display: flex
   flex-direction: row
   justify-content: center
@@ -376,7 +366,7 @@
 .itemInnerP2
   p
     padding: 15px 0
-    color: #000000
+    color: $mainBlack
     font-size: 15px
 
 .itemInnerP3
@@ -389,7 +379,7 @@
 
 .itemInnerP3
   a:hover
-    color: pink
+    color: $mainGray
     text-decoration: none
 
 .portfolioSection
@@ -408,7 +398,6 @@
     @extend %commonStyleP
 
 .teamSection
-  // font-family: $mainFont
   text-align: center
   display: flex
   flex-wrap: wrap
@@ -416,7 +405,6 @@
   align-items: center
 
 .card
-  // font-family: $mainFont
   cursor: pointer
   box-shadow: 0 5px 15px 0 rgba(0,0,0,0.3)
   width: 250px
@@ -427,7 +415,7 @@
   letter-spacing: 2px
   text-transform: uppercase
   font-weight: 700
-  color: #333333
+  color: $mainGray2
 
 .imgBox
   width: 250px
@@ -446,7 +434,7 @@
   position: absolute
   top: 250px
   left: 0
-  color: #ffffff
+  color: $mainWhite
   padding: 15px 10px 0 10px
   display: flex
   flex-direction: column
@@ -533,19 +521,17 @@
 
 .planItemTitle
   h5
-    // font-family: $mainFont
     margin-top: 20px
     font-size: 25px
     text-transform: uppercase
-    color: #ffffff
+    color: $mainWhite
     font-weight: bold
     letter-spacing: 2px
 
 .planItemTitle
   p
-    // font-family: $mainFont
     font-size: 35px
-    color: #ffffff
+    color: $mainWhite
     font-weight: bolder
 
 .planPrice
@@ -555,12 +541,10 @@
   list-style-type: none
   padding-top: 20px
   text-align: left
-  color: #ffffff
-  // font-family: $mainFont
+  color: $mainWhite
 
 .planPros
   li
-    // font-family: $mainFont
     line-height: 2
     font-size: 18px
 
@@ -573,7 +557,6 @@
     color: $mainBlue
     font-size: 16px
     text-transform: uppercase
-    // font-family: $mainFont
     font-weight: bolder
 
 .footer-content
@@ -582,7 +565,7 @@
   flex-direction: column
   justify-content: center
   align-items: center
-  background: #000000
+  background: $mainBlack
   padding: 70px 0
 
 .footer-content
@@ -602,8 +585,7 @@
 .infoTexts
   text-align: center
   padding-top: 15px
-  // font-family: $mainFont
-  color: #ffffff
+  color: $mainWhite
 
 .infoTextsCredits
   a
@@ -627,14 +609,12 @@
     text-transform: uppercase
     color: $mainBlue
     font-size: 18px
-    // font-family: $mainFont
 
 .qaSectionTitles
   h4
     padding-top: 10px
-    color: #000000
+    color: $mainBlack
     font-size: 26px
-    // font-family: $mainFont
     font-weight: bolder
 
 .sectionImage
@@ -645,7 +625,6 @@
   padding-top: 40px
 
 .questionTitle
-  // font-family: $mainFont
   font-size: 15px
   cursor: pointer
   line-height: 2
@@ -659,7 +638,6 @@
   color: $mainBlue
   margin-top: 10px
   margin-left: 10px
-  // font-family: $mainFont
   display: none
 
 .questionSection
@@ -695,9 +673,8 @@
     width: 100%
     height: 550px
     border-radius: 10px
-    border: 2px solid #828282
+    border: 2px solid $mainGray
     frameborder: 0
-    border: 0
     aria-hidden: false
     tabindex: 0
 
@@ -726,7 +703,6 @@
     +iconSize(55px, 55px)
 
 .contactPhs
-  // font-family: $mainFont
   display: inline-block
   justify-content: center
   align-items: center
@@ -748,13 +724,11 @@
   span
     font-size: 35px
     font-weight: bolder
-    // font-family: $mainFont
 
 .contactForm
   h3
     font-size: 35px
     font-weight: normal
-    // font-family: $mainFont
 
 .formGrid
   display: grid
@@ -781,7 +755,7 @@
   button
     padding: 15px 20px
     background: $mainBlue
-    color: #ffffff
+    color: $mainWhite
     font-size: 16px
     font-weight: bolder
     text-transform: uppercase
@@ -790,35 +764,33 @@
 
 .formLabel
   display: block
-  // font-family: $mainFont
   font-size: 14px
-  color: #828282
+  color: $mainGray
 
 .formInput
   font-size: 14px
-  color: #828282
-  border: 2px solid #828282
+  color: $mainGray
+  border: 2px solid $mainGray
   border-radius: 5px
   width: 100%
   padding: 15px 0 15px 5px
-  background: #ffffff
+  background: $mainWhite
 
 .formInputTA
   font-size: 14px
-  color: #828282
-  border: 2px solid #828282
+  color: $mainGray
+  border: 2px solid $mainGray
   border-radius: 5px
   width: 100%
   padding: 5px 0 50px 5px
-  background: #ffffff
+  background: $mainWhite
   resize: none
 
 #successNotice
-  // font-family: $mainFont
   width: 100%
   text-align: center
   padding: 5px
-  color: #333333
+  color: $mainGray2
   font-size: 20px
   text-transform: uppercase
   letter-spacing: 2px
@@ -831,7 +803,7 @@
 
 #successNotice.error
     background: rgba(242, 5, 5, 0.7)
-    color: #ffffff
+    color: $mainWhite
     animation: successMsg 3s ease forwards
 
 @keyframes successMsg
@@ -878,12 +850,11 @@
   padding: 0px 10px
 
 .pop-content
-  background: #ffffff
-  color: #000000
+  background: $mainWhite
+  color: $mainBlack
   width: 450px
   padding: 25px
   position: relative
-  // font-family: $mainFont
   text-align: center
   border-radius: 20px
 
@@ -905,12 +876,12 @@
 .pop-title
   font-size: 16px
   font-weight: bolder
-  color: #000000
+  color: $mainBlack
 
 .pop-text
   margin-top: 25px
   letter-spacing: 1.5px
-  color: #333333
+  color: $mainGray2
 
 //M.Queries for Responsiveness
 @import mediaQueries
