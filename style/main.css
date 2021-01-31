@@ -1719,14 +1719,6 @@ template {
   .formGrid label {
     margin-bottom: 10px;
   }
-
-  .contactPhs p {
-    -webkit-text-decoration: none;
-  }
-
-  .infoTextsCredits a {
-    -webkit-text-decoration: none;
-  }
 }
 @media screen and (max-width: 1100px) and (min-width: 766px) {
   .itemInnerP1 img {
@@ -1788,14 +1780,6 @@ template {
 
   .card {
     margin-right: 40px;
-  }
-
-  .contactPhs p {
-    -webkit-text-decoration: none;
-  }
-
-  .infoTextsCredits a {
-    -webkit-text-decoration: none;
   }
 }
 @media screen and (max-width: 1000px) and (min-width: 766px) {
