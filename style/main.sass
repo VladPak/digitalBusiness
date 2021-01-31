@@ -1,6 +1,6 @@
 @import "varsForDesign"
-
 @import normalize
+
 *
   margin: 0
   padding: 0
@@ -150,10 +150,6 @@
 
 .body-main
   flex: 1 1 auto
-/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-// .sticky + .body-main
-//   padding-top: 150px
-
 
 .slider-body
   padding: 40px 0 20px 0
@@ -161,13 +157,11 @@
   justify-content: center
   align-items: center
 
-
 .slider
   position: relative
   width: 100%
   height: 590px
   overflow: hidden
-
 
 .slides
   position: absolute
@@ -176,7 +170,6 @@
   top: 0
   left: 0
   transition: 2s ease
-
 
 .slide
   width: 33.33%
@@ -187,7 +180,6 @@
   background-position: center center
   background-repeat: no-repeat
 
-
 .slide::before
   content: ""
   position: absolute
@@ -196,7 +188,6 @@
   width: 100%
   height: 100%
   background-color: $mainBlue
-
 
 .slide-data
   position: absolute
@@ -209,10 +200,9 @@
   color: #fff
   padding: 0 13% 5% 13%
 
-
 .slide-data
   h1
-    font-family: $mainFont
+    // font-family: $mainFont
     font-size: 60px
     font-weight: bolder
     width: 100%
@@ -221,14 +211,14 @@
 
 .slide-data
   p
-    font-family: $mainFont
+    // font-family: $mainFont
     font-size: 18px
     padding: 20px 0
 
 
 .slide-data
   button
-    font-family: $mainFont
+    // font-family: $mainFont
     text-align: center
     text-transform: uppercase
     background-color: #ffffff
@@ -241,7 +231,6 @@
     width: 40%
     font-size: 18px
     transition: 0.4s linear
-
 
 .slide-data
   button:hover

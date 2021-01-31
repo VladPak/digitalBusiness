@@ -467,7 +467,6 @@ template {
   flex: 1 1 auto;
 }
 
-/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
 .slider-body {
   padding: 40px 0 20px 0;
   display: flex;
@@ -524,7 +523,6 @@ template {
 }
 
 .slide-data h1 {
-  font-family: "Poppins", sans-serif;
   font-size: 60px;
   font-weight: bolder;
   width: 100%;
@@ -532,13 +530,11 @@ template {
 }
 
 .slide-data p {
-  font-family: "Poppins", sans-serif;
   font-size: 18px;
   padding: 20px 0;
 }
 
 .slide-data button {
-  font-family: "Poppins", sans-serif;
   text-align: center;
   text-transform: uppercase;
   background-color: #ffffff;
