@@ -1725,7 +1725,11 @@ template {
   }
 
   .infoTexts {
-    padding-top: 25px;
+    padding-top: 15px;
+  }
+
+  .infoTexts p {
+    padding-top: 10px;
   }
 }
 @media screen and (max-width: 1110px) and (min-width: 766px) {
