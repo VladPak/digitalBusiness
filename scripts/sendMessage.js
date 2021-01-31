@@ -10,10 +10,9 @@
     // Success and Error functions for after the form is submitted
     function success() {
       form.reset();
-      status.classList.remove("error");
       status.classList.add("success");
       status.innerHTML = "Thanks! Your message was sent successfully!";
-      setTimeout(location.reload.bind(location), 300);
+      //setTimeout(location.reload.bind(location), 300);
     }
 
     function error() {
@@ -27,7 +26,7 @@
     form.addEventListener("submit", function(ev) {
         if(inputName.value.length == 0 || inputEmail.value.length == 0 || inputMsg.value.length == 0){
           error();
-          location.reload();
+          //location.reload();
         }
         else{
           ev.preventDefault();
