@@ -1250,6 +1250,16 @@ template {
   color: #333333;
 }
 
+.contactPhs p {
+  -webkit-color: #000000;
+  -webkit-text-decoration: none;
+}
+
+.infoTextsCredits a {
+  -webkit-color: #ffffff;
+  -webkit-text-decoration: none;
+}
+
 @media screen and (max-width: 766px) {
   .container {
     width: 90%;
