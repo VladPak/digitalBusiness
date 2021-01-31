@@ -1731,6 +1731,10 @@ template {
   .infoTexts p {
     padding-top: 10px;
   }
+
+  .formGrid label {
+    margin-bottom: 10px;
+  }
 }
 @media screen and (max-width: 1110px) and (min-width: 766px) {
   .pricingPlanItem {
