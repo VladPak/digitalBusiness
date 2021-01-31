@@ -12,36 +12,33 @@
       form.reset();
       status.classList.add("success");
       status.innerHTML = "Thanks! Your message was sent successfully!";
+      setTimeout(location.reload.bind(location), 200);
     }
 
     function error() {
         form.reset();
+        location.reload();
         status.classList.add("error");
         status.innerHTML = "Empty input. Please check.";
-    }
-
-    function invalidInput() {
-        form.reset();
-        status.classList.add("invalidInput");
-        status.innerHTML = "Invalid input. Please check.";
     }
 
 
     // handle the form submission event
     form.addEventListener("submit", function(ev) {
         if(inputName.value.length == 0 || inputEmail.value.length == 0 || inputMsg.value.length == 0){
-          invalidInput();
+          error();
+
         }
         else{
           ev.preventDefault();
           var data = new FormData(form);
-          ajax(form.method, form.action, data, success, error, invalidInput);
+          ajax(form.method, form.action, data, success, error);
         }
     });
   });
 
   // helper function for sending an AJAX request
-  function ajax(method, url, data, success, error, invalidInput) {
+  function ajax(method, url, data, success, error) {
     var xhr = new XMLHttpRequest();
     xhr.open(method, url);
     xhr.setRequestHeader("Accept", "application/json");
