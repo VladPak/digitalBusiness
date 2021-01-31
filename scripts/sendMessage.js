@@ -12,13 +12,14 @@
       form.reset();
       status.classList.add("success");
       status.innerHTML = "Thanks! Your message was sent successfully!";
-      //setTimeout(location.reload.bind(location), 300);
+      setTimeout(location.reload.bind(location), 500);
     }
 
     function error() {
         form.reset();
         status.classList.add("error");
         status.innerHTML = "Empty input. Please check.";
+        setTimeout(location.reload.bind(location), 500);
     }
 
 
@@ -26,7 +27,6 @@
     form.addEventListener("submit", function(ev) {
         if(inputName.value.length == 0 || inputEmail.value.length == 0 || inputMsg.value.length == 0){
           error();
-          //location.reload();
         }
         else{
           ev.preventDefault();
