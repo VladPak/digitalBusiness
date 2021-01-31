@@ -15,7 +15,6 @@ $mainFont: 'Poppins', sans-serif
   width: $sizeW
   height: $sizeH
 
-
 //Mixin Flex
 =flexConfig($flexDisplay, $flexDirection, $justContent, $flexAlign)
   display: $flexDisplay
@@ -23,19 +22,16 @@ $mainFont: 'Poppins', sans-serif
   justify-content: $justContent
   align-items: $flexAlign
 
-
 //Mixin Grid Template
 =gridTemplateConfig($gridDisplay, $gridTemplateRows, $gridTemplateColumns, $gridGap)
   display: $gridDisplay
   grid-template: $gridTemplateRows / $gridTemplateColumns
   gap: $gridGap
 
-
 //Mixin Grid Item
 =gridItemConfig($gridRowStart, $gridRowEnd, $gridColStart, $gridColEnd, $itemOrder)
   grid-row: $gridRowStart / $gridRowEnd
   grid-column: $gridColStart / $gridColEnd
-
 
 //Mixin Grid Item Placement
 =gridItemPlacementConfig($gridJustify, $gridAlign)
