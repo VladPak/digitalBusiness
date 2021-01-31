@@ -17,10 +17,8 @@
 
     function error() {
         form.reset();
-        location.reload();
         status.classList.add("error");
         status.innerHTML = "Empty input. Please check.";
-        location.reload();
     }
 
 
@@ -28,7 +26,7 @@
     form.addEventListener("submit", function(ev) {
         if(inputName.value.length == 0 || inputEmail.value.length == 0 || inputMsg.value.length == 0){
           error();
-
+          location.reload();
         }
         else{
           ev.preventDefault();
