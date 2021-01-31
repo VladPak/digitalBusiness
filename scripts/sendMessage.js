@@ -12,14 +12,14 @@
       form.reset();
       status.classList.add("success");
       status.innerHTML = "Thanks! Your message was sent successfully!";
-      setTimeout(location.reload.bind(location), 500);
+      setTimeout(window.location.reload.bind(location), 500);
     }
 
     function error() {
         form.reset();
         status.classList.add("error");
         status.innerHTML = "Empty input. Please check.";
-        setTimeout(location.reload.bind(location), 500);
+        setTimeout(window.location.reload.bind(location), 500);
     }
 
 
