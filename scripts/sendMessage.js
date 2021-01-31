@@ -20,6 +20,7 @@
         location.reload();
         status.classList.add("error");
         status.innerHTML = "Empty input. Please check.";
+        location.reload();
     }
 
 
