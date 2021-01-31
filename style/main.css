@@ -803,12 +803,12 @@ template {
   list-style-type: none;
 }
 
-#teamOne:hover .imgBox img {
+.card:hover .imgBox img {
   transform: translateY(-100%);
   transition: all 0.35s ease;
 }
 
-#teamOne:hover .imgBox .imgInfo {
+.card:hover .imgBox .imgInfo {
   background: #0067f4;
   transform: translateY(-100%);
   transition: all 0.35s ease;
